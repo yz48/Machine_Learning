@@ -15,12 +15,7 @@ def getNeighors(train, test, k = 3):
     majority vote
 
     '''
-    '''
-    :param train:
-    :param test:
-    :param k:
-    :return:
-    '''
+
     res = []
     for i in range(len(test)):
         testInstance = test[i]
