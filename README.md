@@ -1,2 +1,2 @@
 # Machine_Learning
-basic machine learning algs with numpy
+basic machine learning algs implemented with numpy
