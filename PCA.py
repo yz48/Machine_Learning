@@ -2,6 +2,11 @@ __author__ = 'yz48'
 import numpy as np
 
 X = np.random.randn(9, 6)
+# center and scale
+X -= X.mean(axis = 0)
+X /= X.std(axis = 0)
+
+
 U, s, V = np.linalg.svd(X, full_matrices=False)
 print U.shape, V.shape, s.shape
 S = np.diag(s)
