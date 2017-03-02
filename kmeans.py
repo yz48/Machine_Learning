@@ -36,7 +36,7 @@ for it in range(iter):
     classes = []
     for x in X:
         #print x
-        c = np.linalg.norm(x-oldmu,axis = 1).argmin()
+        c = np.linalg.norm(x-oldmu,axis = 1).argmin() # sqrt(sum(x^2+y^2+z^2+...))
         #print c, type(c)
         classes.append(c)
     classes = np.array(classes)
